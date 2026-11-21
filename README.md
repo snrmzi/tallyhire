@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tallyhire
 
-## Getting Started
+A job application tracker for managing your search from first click to final offer.
 
-First, run the development server:
+> Status: in development
+
+## Why I built this
+
+Describe in two or three sentences why you made it. For example: keeping
+applications in a spreadsheet got messy, so I built a tool that tracks
+status, contacts, and interview dates in one place.
+
+## Planned features
+
+- [ ] Create, edit, and delete job applications
+- [ ] Status tracking (Wishlist, Applied, Interview, Offer, Rejected)
+- [ ] Kanban board view
+- [ ] Search, filter, and sort
+- [ ] Contacts and interview events per application
+- [ ] Dashboard with response-rate stats
+- [ ] Authentication with GitHub login
+- [ ] Dark mode and responsive layout
+- [ ] CSV export
+
+## Tech stack
+
+- Next.js (App Router) and TypeScript
+- Tailwind CSS
+- PostgreSQL with Prisma
+- Auth.js
+- Zod
+- Vitest and Playwright
+- GitHub Actions and Vercel
+
+## Getting started
+
+### Prerequisites
+
+- Node.js 20 or newer
+- npm
+
+### Setup
 
 ```bash
+git clone https://github.com/snrmzi/tallyhire.git
+cd tallyhire
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command             | What it does                  |
+| ------------------- | ----------------------------- |
+| `npm run dev`       | Start the development server  |
+| `npm run build`     | Build for production          |
+| `npm run lint`      | Run ESLint                    |
+| `npm run format`    | Format the code with Prettier |
+| `npm run typecheck` | Check TypeScript types        |
 
-## Learn More
+## Roadmap
 
-To learn more about Next.js, take a look at the following resources:
+Progress is tracked through commits and the checklist above.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
